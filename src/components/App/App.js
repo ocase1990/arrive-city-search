@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carriers from '../Carriers';
 import 'semantic-ui-css/semantic.min.css';
-import { Input, Form } from 'semantic-ui-react'
+import { Input, Form, Button } from 'semantic-ui-react'
 
 
 import './App.css';
@@ -43,6 +43,7 @@ props with the carriers in that city with the fetch call.
             }}
               placeholder="Anywhere..."
             />
+            <Button primary> Search</Button>
          </Form>
          </div>
          <Carriers />
