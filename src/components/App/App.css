@@ -1,0 +1,19 @@
+body {
+  background-color: #f4f4f4;
+}
+.App {
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+
+  color: #3b3b3b;
+}
+
+
+.App-header {
+  padding: 15px;
+  width: 500px;
+  color: #ccffff;
+  background-color: #1c2431;
+
+}
