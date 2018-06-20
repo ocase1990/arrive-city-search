@@ -19,7 +19,7 @@ export default class App extends Component {
     this.props.fetchCarriers(this.state.city);
   }
 
-/* In the form with button in app it uses the input value to change the city
+/*  PLEASE In the form with button in app it uses the input value to change the city
 in state when you submit (enter key or click the button). This then updates
 props with the carriers in that city with the fetch call.
 */
