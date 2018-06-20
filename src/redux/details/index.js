@@ -34,7 +34,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         error: true,
-        details: initialState.DETAILS,
+        details: initialState.details,
       }
 
     default:
@@ -46,7 +46,7 @@ const reducer = (state = initialState, action) => {
 
 // Action Creators
 
-const getDetailsPending = (date) => ({
+const getDetailsPending = (detailId) => ({
   type: GET_DETAILS_PENDING,
 })
 
@@ -60,14 +60,14 @@ const getDetailsRejected = (error) => ({
   payload: error,
 })
 
-export const fetchDetails = (date) =>
+export const fetchDetails = (detailId) =>
   dispatch => {
 
     // 1. tell the store we're fetching
-    dispatch(getDetailsPending(date))
-    // 2. fetch DETAILS
+    dispatch(getDetailsPending(detailId))
+    // 2. fetch details
 
-    return getDetails(date)
+    return getDetails(detailId)
       // 3. return results on success
       .then(res => dispatch(getDetailsFulfilled(res)))
       // 4. return an error on error

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import { fetchDetails } from '../../redux/details';
+import { fetchCarriers } from '../../redux/carriers';
 import App from './App';
 
-// gives fetchDetails from connect/redux to App.js
+// gives fetchCarriers from connect/redux to App.js
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchDetails: (date) => dispatch(fetchDetails(date)),
+  fetchCarriers: (currentCity) => dispatch(fetchCarriers(currentCity)),
 })
 
 export default connect(null, mapDispatchToProps)(App);

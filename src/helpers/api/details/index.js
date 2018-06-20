@@ -1,7 +1,6 @@
 import { get } from '../'
 
-// currentCity is the city searched for by user
-export const getDetails = ((date) => {
-  console.log(date);
-  return get(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=ryNY6UVTEsTHWS8Wtcauh7zfElZkewCfzRvgZNgd`)
+// detailId will be the id from the carrier (1, 2, 3, etc)
+export const getDetails = ((detailId) => {
+  return get(`http://arrive-interview-api.azurewebsites.net/api/carrierDetails/${detailId}`)
 });

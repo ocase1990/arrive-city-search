@@ -1,28 +1,19 @@
 body {
-  background-color: #1c2431;
+  background-color: #f4f4f4;
 }
 .App {
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
 
-  color: #f3f3f3;
-
-  margin: auto;
-  padding: 10px;
-
+  color: #3b3b3b;
 }
 
-.calStyle {
-  display: inline-block;
-  padding: 10px;
-}
 
-.active {
-  border: 3px solid yellow;
-}
+.App-header {
+  padding: 15px;
+  width: 500px;
+  color: #ccffff;
+  background-color: #1c2431;
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
 }
