@@ -1,12 +1,10 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import carriers from './carriers';
 import details from './details';
 
 const initialState = {
   details: [],
-  carriers: [],
   isFetching: false,
   error: false,
   initialized: false,
@@ -32,8 +30,8 @@ const ui = (state = initialState, action) => {
 
 const reducer = combineReducers({
   ui,
-  carriers,
   details,
+
 })
 
 const store = createStore(
