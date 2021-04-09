@@ -1,6 +1,4 @@
-# ARRIVE LOGISTICS CODE SAMPLE
 
-## ARRIVE CITY/CARRIER SEARCH APRIL 2018
 
 ### Features
 Cities are preloaded before search is initiated.
